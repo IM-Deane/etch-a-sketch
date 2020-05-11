@@ -1,0 +1,85 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Container for title text and button */
+#button-box {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding-bottom: 20px;
+    align-items: center;
+    width: 80%;
+}
+
+#title-text {
+    position: absolute;
+    top: 40px;
+    color: gold;
+    text-decoration: underline;
+    text-decoration: gold;
+    font-size: 28px;
+}
+
+.text-style {
+    color: orangered;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.button {
+    background-color:  rgb(179, 2, 2);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 8px #999;
+
+}
+
+.button:hover {
+    background-color: darkred;
+
+}
+
+/* Effect when button pressed */
+.button:active {
+    background-color: darkred;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Container for grid items */
+.squares-box {
+    height: 500px;
+    width: 900px;
+    display: grid;
+    border: solid 40px red;
+    border-radius: 8px;
+    cursor: crosshair;
+}
+
+/* Individual grid items */
+.squares {
+    background-color: white;
+    border: none;
+}
+
+/* Change the square to green on mouse over */
+.activated {
+    background-color: black;
+    border: none;
+    
+}
